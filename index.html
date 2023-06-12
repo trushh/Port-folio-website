@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/30da898b63.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Cormorant+Garamond:wght@300&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<!--------------------------home----------------------------------->
+    <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+             
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hello world!<br> I'm <span> Trushna Tapaswini.</span></h1>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------about--------------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ME.jpeg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT</h1><br>
+                <p>Hello folks!!!😄<br>
+                    I am currently pursuing my bachelor's in Information Technology. I am very much into Data Analytics, Web Development, and Problem-Solving. I am a very goal-oriented person, and I work hard to achieve it. 
+                    Plus on a side note; I am a big Potter Head :) </p>
+                <br>
+                <div class="tab-titles">
+                <p class="tab-links active link"onclick="opentab('EDUCATION')">EDUCATION</p>
+                <p class="tab-links"onclick="opentab('PROJECTS')">PROJECTS</p>
+                <p class="tab-links"onclick="opentab('SOCIETIES')">SOCIETIES</p>
+                
+
+            </div>
+            <div class="tab-contents active-tab" id="EDUCATION">
+                <ul>
+                    <li><span>BACHELORS OF TECHNOLOGY (2020-present)</span><br>Kalinga Institute of Industrial Technology<br>Bhubaneswar,Odisha<br>8.4 CGPA</li><br>
+                    <li><span>CLASS 12TH (2019-2020)</span><br>Kendriya Vidyala AFS Hakimpet<br>Hyderabad,Telengana (2019-2020)<br>92%</li><br>
+                    <li><span>CLASS 10TH (2017-2018)</span><br>Kendriya Vidyalaya AFS Hakimpet<br>Hyderabad,Telengana<br>90%</li><br>
+                </ul>
+            </div>
+            <div class="tab-contents" id="PROJECTS">
+                <ul>
+                    <li><span>PORTFOLIO WEBSITE</span><br>Made a responsive Portfolio website using CSS , Java-Script and HTML</li><br>
+                    <li><span>WEATHER APP</span><br>Shows real-time weather of a region</li><br>
+    
+                </ul>
+            </div>
+            <div class="tab-contents" id="SOCIETIES">
+                <ul>
+                    <li><span>KEURIG (2022-Present) </span><br>Working as a content writer</li><br>
+                    <li><span>RED-CROSS KIIT (2021-present)</span><br>Working as a volenteer</li><br>
+    
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------skills------------------------------------------------>
+<div id="skills">
+    <div class="container">
+        <h1 class="s-title">SKILLS</h1><br>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Crafting visually appealing designs is like a visual treat that captivates the observer's attention!<br>By leveraging the principles of color theory, typography, layout, and visual hierarchy, I strive to create interactive web-pages.<br><br> Proficient in CSS, JavaScript, and HTML.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Problem-Solving</h2>
+                <p>Mastering problem-solving is akin to unlocking endless possibilities!<br> With a sharp analytical mindset and a passion for overcoming challenges, I tackle complex problems head-on. Through logical reasoning, critical thinking, and a systematic approach, I seek innovative solutions.<br><br>Proficient in C++ and Python  </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Data Structues and Algorithms</h2>
+                <p>Navigating the realm of data structures and algorithms is like exploring a labyrinth of possibilities!<br> Equipped with a deep understanding of data structures such as arrays, linked lists, trees, and graphs, I leverage this knowledge to efficiently organize and manipulate data. With a comprehensive understanding of algorithmic paradigms like searching, sorting, and dynamic programming, I try tackle complex problems with precision.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!------------------------------------------------CONTACT----------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1><div class="sub-t"><i class="fas fa-paper-plane"></i> CONTACT</div></h1>
+                <p><div class="mail"><i class="fas fa-envelope"></i> 2006376@kiit.ac.in</div></p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/tru.shhh/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100016610657051"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/in/trushna-tapaswini-239662133/"><i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+                
+            </div>
+           <div class="contact-right">
+            <form>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="mail" placeholder="Email" required>
+                <textarea name="message" rows="6" placeholder="So, Whats up?! You can leave a message here!"></textarea>
+                <button type="submit" class="btn  btn2" >submit</button>
+
+            </form>
+           </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------script--------------------------------------->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+</body>
+</html>
